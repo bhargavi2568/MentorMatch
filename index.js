@@ -6,8 +6,14 @@ const pool = require("./db"); // Import the database connection
 // middleware
 app.use(cors());
 app.use(express.json()); // Allows us to access req.body (JSON data)
+const authRoutes = require("./routes/auth");
+const teacherRoutes = require("./routes/teacher");
+const studentRoutes = require("./routes/student");
 
-// ROUTES //
+// ROUTES //    
+app.use("/auth", authRoutes);
+app.use("/teacher", teacherRoutes);
+app.use("/student", studentRoutes);
 
 // Simple test route to check if server is working
 app.get("/", (req, res) => {
