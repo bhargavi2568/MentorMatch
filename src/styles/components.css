@@ -1,0 +1,98 @@
+.mentor-card {
+  background-color: #f0f4ff;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.mentor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.mentor-card h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.mentor-card p {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.mentor-card button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #6e8efb;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.mentor-card button:hover {
+  background-color: #5a74e3;
+}
+
+
+/* Mentor Dashboard */
+.request-card {
+  background-color: #fff0f5;
+  padding: 20px;
+  border-radius: 15px;
+  width: 300px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.request-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.request-card h4 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.request-card p {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.request-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.request-buttons button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.request-buttons button:first-child {
+  background-color: #4caf50;
+}
+
+.request-buttons button:first-child:hover {
+  background-color: #3e8e41;
+}
+
+.request-buttons button:last-child {
+  background-color: #f44336;
+}
+
+.request-buttons button:last-child:hover {
+  background-color: #d32f2f;
+}
